@@ -1,5 +1,17 @@
 
-We show the process of obtaining the constituent tree and semantic dependency graph of a given dialogue here.
+We show four cases about why **constituent tree** and **semantic dependency graph** should be incorporated dynamically:
+
+| Case | constituent tree | semantic dependency graph |
+
+| ------ | ------ | ------ |
+
+| 1 | **√** | **×** |
+
+| 2 | 文本 | 文本 |
+
+
+
+
 
 ```py
 
@@ -22,10 +34,8 @@ from supar import Parser
  |        |     |        |     |   |      |       |     |     |     |  
 Oppo      's flagship machine has good quality control and texture  . 
 
->>> sdp = dep_parser = Parser.load('sdp-vi-en')
->>> sdp.predict([[('I','I','PRP'), ('saw','see','VBD'), ('Sarah','Sarah','NNP'), ('with','with','IN'),
-                  ('a','a','DT'), ('telescope','telescope','NN'), ('.','_','.')]],
-                verbose=False)[0]
+>>> sdp_parser = Parser.load('sdp-vi-en')
+>>> print(sdp_parser.predict(token, verbose=False)[0])
 
 1	Oppo	_	_	_	_	_	_	_	_
 2	's	_	_	_	_	_	_	_	_
