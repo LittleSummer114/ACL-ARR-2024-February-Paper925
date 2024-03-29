@@ -34,7 +34,7 @@ the **semantic dependency graph** of "Oppo 's flagship machine has good quality 
 ```
 
 
-**Case 1**
+**Case 2**
 
 the **constituent tree** of the dialogue "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
 
