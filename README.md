@@ -1,5 +1,5 @@
 
-We show the process of obtaining the constituent tree of here.
+We show the process of obtaining the constituent tree and semantic dependency graph of a given dialogue here.
 
 ```py
 
@@ -26,10 +26,37 @@ Oppo      's flagship machine has good quality control and texture  .
 >>> sdp.predict([[('I','I','PRP'), ('saw','see','VBD'), ('Sarah','Sarah','NNP'), ('with','with','IN'),
                   ('a','a','DT'), ('telescope','telescope','NN'), ('.','_','.')]],
                 verbose=False)[0]
-1       I       I       PRP     _       _       _       _       2:ARG1  _
-2       saw     see     VBD     _       _       _       _       0:root|4:ARG1   _
-3       Sarah   Sarah   NNP     _       _       _       _       2:ARG2  _
-4       with    with    IN      _       _       _       _       _       _
-5       a       a       DT      _       _       _       _       _       _
-6       telescope       telescope       NN      _       _       _       _       4:ARG2|5:BV     _
-7       .       _       .       _       _       _       _       _       _
+
+1	Oppo	_	_	_	_	_	_	_	_
+2	's	_	_	_	_	_	_	_	_
+3	flagship	_	_	_	_	_	_	_	_
+4	machine	_	_	_	_	_	_	2:compound|3:compound|5:ARG1	_
+5	has	_	_	_	_	_	_	0:root	_
+6	good	_	_	_	_	_	_	_	_
+7	quality	_	_	_	_	_	_	_	_
+8	control	_	_	_	_	_	_	5:ARG2|6:ARG1|7:compound	_
+9	and	_	_	_	_	_	_	_	_
+10	texture	_	_	_	_	_	_	8:_and_c	_
+11	.	_	_	_	_	_	_	_	_
+
+
+
+
+
+                                                  TOP                                               
+                                                    |                                                 
+                                                    S                                                
+                          __________________________|______________________                           
+                         |                               |                 S                         
+                         |                               |       __________|______                    
+                         S                               |      |      |          VP                 
+                      ___|___________________            |      |      |    ______|__________         
+                     NP                      VP          |      |      |   |      |          VP      
+      _______________|_______            ____|______     |      |      |   |      |       ___|____    
+     NP              |       NP         |   ADVP   ADJP  |     ADVP    NP  |     ADVP    |       ADJP
+  ___|_______        |    ___|____      |    |      |    |      |      |   |      |      |        |   
+ _           _       _   _        _     _    _      _    _      _      _   _      _      _        _  
+ |           |       |   |        |     |    |      |    |      |      |   |      |      |        |   
+The     workmanship and the     screen are indeed good, but sometimes  it will suddenly get     stuck
+
+
