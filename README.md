@@ -2,24 +2,32 @@
 We show the process of obtaining the constituent tree of each dialogue here.
 
 ```py
+
+from supar import Parser
+
+con_parser = Parser.load('con-crf-roberta-en')
+dep_parser = Parser.load('sdp-vi-en')
+
+token = "Oppo 's flagship machine has good quality control and texture .".split(' ')
+
+
 >>> from supar import Parser
 >>> parser = Parser.load('dep-biaffine-en')
 >>> dataset = parser.predict('I saw Sarah with a telescope.', lang='en', prob=True, verbose=False)
 >>> con = Parser.load('con-crf-en')
 >>> con.predict(['I', 'saw', 'Sarah', 'with', 'a', 'telescope', '.'], verbose=False)[0].pretty_print()
-              TOP                       
-               |                         
-               S                        
-  _____________|______________________   
- |             VP                     | 
- |    _________|____                  |  
- |   |    |         PP                | 
- |   |    |     ____|___              |  
- NP  |    NP   |        NP            | 
- |   |    |    |     ___|______       |  
- _   _    _    _    _          _      _ 
- |   |    |    |    |          |      |  
- I  saw Sarah with  a      telescope  . 
+
+                                  TOP                                 
+                                   |                                   
+                                   S                                  
+           ________________________|________________________________   
+          NP                              VP                        | 
+       ___|______________       __________|_______                  |  
+      NP        |        |     |                  NP                | 
+  ____|___      |        |     |    ______________|___________      |  
+ _        _     _        _     _   _      _       _     _     _     _ 
+ |        |     |        |     |   |      |       |     |     |     |  
+Oppo      's flagship machine has good quality control and texture  . 
 
 >>> sdp = Parser.load('sdp-biaffine-en')
 >>> sdp.predict([[('I','I','PRP'), ('saw','see','VBD'), ('Sarah','Sarah','NNP'), ('with','with','IN'),
