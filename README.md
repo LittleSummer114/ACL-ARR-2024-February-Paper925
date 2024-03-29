@@ -1,7 +1,7 @@
 
 **Case 1**
 
-the **constituent tree** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
+the **constituent tree** of the dialogue "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
 
 ```py
                                                                    TOP                                                                                
