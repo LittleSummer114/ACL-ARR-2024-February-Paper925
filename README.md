@@ -10,15 +10,10 @@ We show four cases to explain why **constituent tree** and **semantic dependency
 | 3 | **√** | **×** |
 
 | 4 | **√** | **×** |
-
+ 
 **Case 1**
 
-from supar import Parser
-
->>> from supar import Parser
->>> con_parser = Parser.load('con-crf-roberta-en')
->>> token = "Oppo 's flagship machine has good quality control and texture .".split(' ')
->>> con_parser.predict(token, verbose=False)[0].pretty_print()
+the **constituent tree** of "Oppo 's flagship machine has good quality control and texture .":
 
                                   TOP                                 
                                    |                                   
@@ -32,8 +27,7 @@ from supar import Parser
  |        |     |        |     |   |      |       |     |     |     |  
 Oppo      's flagship machine has good quality control and texture  . 
 
->>> sdp_parser = Parser.load('sdp-vi-en')
->>> print(sdp_parser.predict(token, verbose=False)[0])
+the **semantic dependency graph** of "Oppo 's flagship machine has good quality control and texture .":
 
 1	Oppo	_	_	_	_	_	_	_	_
 2	's	_	_	_	_	_	_	_	_
@@ -47,9 +41,9 @@ Oppo      's flagship machine has good quality control and texture  .
 10	texture	_	_	_	_	_	_	8:_and_c	_
 11	.	_	_	_	_	_	_	_	_
 
+**Case 2**
 
-
-
+the **constituent tree** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
 
                                                   TOP                                               
                                                     |                                                 
@@ -67,8 +61,7 @@ Oppo      's flagship machine has good quality control and texture  .
  |           |       |   |        |     |    |      |    |      |      |   |      |      |        |   
 The     workmanship and the     screen are **indeed good**, but sometimes  it will suddenly get     stuck
 
->>> sdp_parser = Parser.load('sdp-vi-en')
->>> print(sdp_parser.predict(token, verbose=False)[0])
+the **semantic dependency graph** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
 
 1	The	_	_	_	_	_	_	_	_
 2	workmanship	_	_	_	_	_	_	1:BV|8:ARG1	_
