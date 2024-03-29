@@ -1,10 +1,8 @@
 
-Case Study.
+We show the process of obtaining the constituent tree of each dialogue here.
 
 ```py
 >>> from supar import Parser
-# if the gpu device is available
-# >>> torch.cuda.set_device('cuda:0')  
 >>> parser = Parser.load('dep-biaffine-en')
 >>> dataset = parser.predict('I saw Sarah with a telescope.', lang='en', prob=True, verbose=False)
 >>> con = Parser.load('con-crf-en')
