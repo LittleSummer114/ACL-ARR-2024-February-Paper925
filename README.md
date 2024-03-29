@@ -1,17 +1,4 @@
 
-In the following cases, in the **constituent tree** of the Case 1, **Oppo 's flagship machine** will be considerd as a term, which mislead models wrongly extract it instead of the correct term **Oppo**, this is a case about **noise** introduced by incorporating  **constituent tree**.
-
-In the following cases, in the **semantic dependency graph** of the Case 2, **software optimization** will not be considerd as a term, which mislead models wrongly extract **optimization** instead of the correct term **Oppo**, this is a case about **noise** introduced by incorporating  **constituent tree**.
-
-
- and **semantic dependency graph** should be incorporated **dynamically**:
-
-| Case | constituent tree | semantic dependency graph |
-
-| 1 | **×** | **√** |
-
-| 2 | **√** | **×** |
- 
 **Case 1**
 
 the **constituent tree** of "Oppo 's flagship machine has good quality control and texture .":
