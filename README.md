@@ -22,7 +22,7 @@ from supar import Parser
  |        |     |        |     |   |      |       |     |     |     |  
 Oppo      's flagship machine has good quality control and texture  . 
 
->>> sdp = Parser.load('sdp-biaffine-en')
+>>> sdp = dep_parser = Parser.load('sdp-vi-en')
 >>> sdp.predict([[('I','I','PRP'), ('saw','see','VBD'), ('Sarah','Sarah','NNP'), ('with','with','IN'),
                   ('a','a','DT'), ('telescope','telescope','NN'), ('.','_','.')]],
                 verbose=False)[0]
