@@ -1,19 +1,19 @@
 
-We show four cases about why **constituent tree** and **semantic dependency graph** should be incorporated dynamically:
+We show four cases to explain why **constituent tree** and **semantic dependency graph** should be incorporated **dynamically**:
 
 | Case | constituent tree | semantic dependency graph |
 
 | ------ | ------ | ------ |
 
-| 1 | **√** | **×** |
+| 1 | **×** | **√** |
 
-| 2 | 文本 | 文本 |
+| 2 | **√** | **×** |
 
+| 3 | **√** | **×** |
 
+| 4 | **√** | **×** |
 
-
-
-```py
+**Case 1**
 
 from supar import Parser
 
@@ -48,10 +48,6 @@ Oppo      's flagship machine has good quality control and texture  .
 9	and	_	_	_	_	_	_	_	_
 10	texture	_	_	_	_	_	_	8:_and_c	_
 11	.	_	_	_	_	_	_	_	_
-
-
-
-
 
                                                   TOP                                               
                                                     |                                                 
