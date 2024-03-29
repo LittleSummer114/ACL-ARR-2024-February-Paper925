@@ -3,8 +3,6 @@ We show four cases to explain why **constituent tree** and **semantic dependency
 
 | Case | constituent tree | semantic dependency graph |
 
-| ------ | ------ | ------ |
-
 | 1 | **×** | **√** |
 
 | 2 | **√** | **×** |
