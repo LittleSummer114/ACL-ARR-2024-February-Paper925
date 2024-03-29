@@ -15,6 +15,7 @@ We show four cases to explain why **constituent tree** and **semantic dependency
 
 the **constituent tree** of "Oppo 's flagship machine has good quality control and texture .":
 
+```py
                                   TOP                                 
                                    |                                   
                                    S                                  
@@ -26,8 +27,11 @@ the **constituent tree** of "Oppo 's flagship machine has good quality control a
  _        _     _        _     _   _      _       _     _     _     _ 
  |        |     |        |     |   |      |       |     |     |     |  
 Oppo      's flagship machine has good quality control and texture  . 
+```
 
 the **semantic dependency graph** of "Oppo 's flagship machine has good quality control and texture .":
+
+```py
 
 1	Oppo	_	_	_	_	_	_	_	_
 2	's	_	_	_	_	_	_	_	_
@@ -40,11 +44,13 @@ the **semantic dependency graph** of "Oppo 's flagship machine has good quality 
 9	and	_	_	_	_	_	_	_	_
 10	texture	_	_	_	_	_	_	8:_and_c	_
 11	.	_	_	_	_	_	_	_	_
+```
 
 **Case 2**
 
 the **constituent tree** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
 
+```py
                                                   TOP                                               
                                                     |                                                 
                                                     S                                                
@@ -61,7 +67,11 @@ the **constituent tree** of "The workmanship and the screen are indeed good, but
  |           |       |   |        |     |    |      |    |      |      |   |      |      |        |   
 The     workmanship and the     screen are **indeed good**, but sometimes  it will suddenly get     stuck
 
+```
+
 the **semantic dependency graph** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
+
+```py
 
 1	The	_	_	_	_	_	_	_	_
 2	workmanship	_	_	_	_	_	_	1:BV|8:ARG1	_
@@ -79,3 +89,5 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
 14	suddenly	_	_	_	_	_	_	_	_
 15	get	_	_	_	_	_	_	11:ARG1|14:ARG1	_
 16	stuck	_	_	_	_	_	_	_	_
+
+```
