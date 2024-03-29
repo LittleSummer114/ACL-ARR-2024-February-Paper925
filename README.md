@@ -49,6 +49,10 @@ Oppo      's flagship machine has good quality control and texture  .
 10	texture	_	_	_	_	_	_	8:_and_c	_
 11	.	_	_	_	_	_	_	_	_
 
+
+
+
+
                                                   TOP                                               
                                                     |                                                 
                                                     S                                                
@@ -63,6 +67,24 @@ Oppo      's flagship machine has good quality control and texture  .
   ___|_______        |    ___|____      |    |      |    |      |      |   |      |      |        |   
  _           _       _   _        _     _    _      _    _      _      _   _      _      _        _  
  |           |       |   |        |     |    |      |    |      |      |   |      |      |        |   
-The     workmanship and the     screen are indeed good, but sometimes  it will suddenly get     stuck
+The     workmanship and the     screen are **indeed good**, but sometimes  it will suddenly get     stuck
 
+>>> sdp_parser = Parser.load('sdp-vi-en')
+>>> print(sdp_parser.predict(token, verbose=False)[0])
 
+1	The	_	_	_	_	_	_	_	_
+2	workmanship	_	_	_	_	_	_	1:BV|8:ARG1	_
+3	and	_	_	_	_	_	_	_	_
+4	the	_	_	_	_	_	_	_	_
+5	screen	_	_	_	_	_	_	2:_and_c|4:BV	_
+6	are	_	_	_	_	_	_	_	_
+7	**indeed**	_	_	_	_	_	_	_	_
+8	**good**	_	_	_	_	_	_	7:ARG1	_
+9	,	_	_	_	_	_	_	_	_
+10	but	_	_	_	_	_	_	_	_
+11	sometimes	_	_	_	_	_	_	_	_
+12	it	_	_	_	_	_	_	15:ARG1	_
+13	will	_	_	_	_	_	_	_	_
+14	suddenly	_	_	_	_	_	_	_	_
+15	get	_	_	_	_	_	_	11:ARG1|14:ARG1	_
+16	stuck	_	_	_	_	_	_	_	_
