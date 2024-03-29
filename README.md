@@ -12,7 +12,7 @@ token = "Oppo 's flagship machine has good quality control and texture .".split(
 
 
 >>> from supar import Parser
->>> parser = Parser.load('dep-biaffine-en')
+>>> con_parser = Parser.load('con-crf-roberta-en')
 >>> dataset = parser.predict('I saw Sarah with a telescope.', lang='en', prob=True, verbose=False)
 >>> con = Parser.load('con-crf-en')
 >>> con.predict(['I', 'saw', 'Sarah', 'with', 'a', 'telescope', '.'], verbose=False)[0].pretty_print()
