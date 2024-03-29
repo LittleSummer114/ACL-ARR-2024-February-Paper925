@@ -5,10 +5,6 @@ We show the process of obtaining the constituent tree of each dialogue here.
 
 from supar import Parser
 
-
-
-
-
 >>> from supar import Parser
 >>> con_parser = Parser.load('con-crf-roberta-en')
 >>> token = "Oppo 's flagship machine has good quality control and texture .".split(' ')
