@@ -34,9 +34,9 @@ the **semantic dependency graph** of "Oppo 's flagship machine has good quality 
 ```py
 
 1	Oppo	_	_	_	_	_	_	_	_
-2	's	_	_	_	_	_	_	_	_
-3	flagship	_	_	_	_	_	_	_	_
-4	machine	_	_	_	_	_	_	2:compound|3:compound|5:ARG1	_
+2	## 's	_	_	_	_	_	_	_	_
+3	## flagship	_	_	_	_	_	_	_	_
+4	## machine	_	_	_	_	_	_	2:compound|3:compound|5:ARG1	_
 5	has	_	_	_	_	_	_	0:root	_
 6	good	_	_	_	_	_	_	_	_
 7	quality	_	_	_	_	_	_	_	_
