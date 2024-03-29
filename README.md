@@ -1,5 +1,5 @@
 
-We show the process of obtaining the constituent tree of each dialogue here.
+We show the process of obtaining the constituent tree of here.
 
 ```py
 
