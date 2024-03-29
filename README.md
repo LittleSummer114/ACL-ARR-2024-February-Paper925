@@ -5,17 +5,14 @@ We show the process of obtaining the constituent tree of each dialogue here.
 
 from supar import Parser
 
-con_parser = Parser.load('con-crf-roberta-en')
-dep_parser = Parser.load('sdp-vi-en')
 
-token = "Oppo 's flagship machine has good quality control and texture .".split(' ')
+
 
 
 >>> from supar import Parser
 >>> con_parser = Parser.load('con-crf-roberta-en')
->>> dataset = parser.predict('I saw Sarah with a telescope.', lang='en', prob=True, verbose=False)
->>> con = Parser.load('con-crf-en')
->>> con.predict(['I', 'saw', 'Sarah', 'with', 'a', 'telescope', '.'], verbose=False)[0].pretty_print()
+>>> token = "Oppo 's flagship machine has good quality control and texture .".split(' ')
+>>> con_parser.predict(token, verbose=False)[0].pretty_print()
 
                                   TOP                                 
                                    |                                   
