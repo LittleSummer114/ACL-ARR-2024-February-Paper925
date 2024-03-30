@@ -80,3 +80,40 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
 17	sadness	_	_	_	_	_	_	_	_
 18	]	_	_	_	_	_	_	_	_
 ```
+
+**Case 2**
+
+the **constituent tree** of the dialogue "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
+
+```py
+                                  TOP                              
+                                   |                                
+                                   S                               
+        ___________________________|______                          
+       |                                  VP                       
+       |                __________________|____                     
+       |               |    |                 ADJP                 
+       |               |    |       ___________|_____               
+       |               |    |      |                 PP            
+       |               |    |      |       __________|___           
+       NP              |   ADVP    |      |              NP        
+   ____|_______        |    |      |      |     _________|_____     
+  _            _       _    _      _      _    _         _     _   
+  |            |       |    |      |      |    |         |     |    
+Daily     photography  is still inferior  to iPhone     and Samsung
+
+```
+the **semantic dependency graph** of "Daily photography is still inferior to iPhone and Samsung":
+
+```py
+
+1	Daily	_	_	_	_	_	_	_	_
+2	photography	_	_	_	_	_	_	1:ARG1|5:ARG1	_
+3	is	_	_	_	_	_	_	_	_
+4	still	_	_	_	_	_	_	_	_
+5	inferior	_	_	_	_	_	_	0:root|4:ARG1|6:ARG1	_
+6	to	_	_	_	_	_	_	_	_
+7	iPhone	_	_	_	_	_	_	6:ARG2	_
+8	and	_	_	_	_	_	_	_	_
+9	Samsung	_	_	_	_	_	_	_	_
+```
