@@ -80,6 +80,8 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
 18	]	_	_	_	_	_	_	_	_
 ```
 
+```py
+
                TOP                                                                                     
                 |                                                                                       
                 S                                                                                      
@@ -104,3 +106,24 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
  |    |    |    |      |     |    |   |    |       |       |    |   |      |      |   |       |     |   
 The redmi k20 series starts with the  K  series borders, which are also narrower  at the     same price
 
+
+
+1	The	_	_	_	_	_	_	_	_
+2	redmi	_	_	_	_	_	_	_	_
+3	k20	_	_	_	_	_	_	3:ARG1	_
+4	series	_	_	_	_	_	_	1:BV|4:ARG1	_
+5	starts	_	_	_	_	_	_	6:ARG1	_
+6	with	_	_	_	_	_	_	_	_
+7	the	_	_	_	_	_	_	_	_
+8	K	_	_	_	_	_	_	_	_
+9	series	_	_	_	_	_	_	_	_
+10	borders,	_	_	_	_	_	_	9:compound	_
+11	which	_	_	_	_	_	_	_	_
+12	are	_	_	_	_	_	_	_	_
+13	also	_	_	_	_	_	_	_	_
+14	narrower	_	_	_	_	_	_	13:ARG1|15:ARG1	_
+15	at	_	_	_	_	_	_	_	_
+16	the	_	_	_	_	_	_	_	_
+17	same	_	_	_	_	_	_	_	_
+18	price	_	_	_	_	_	_	_	_
+```
