@@ -1,43 +1,6 @@
 **Case 1**
 
-the **constituent tree** of "Oppo 's flagship machine has good quality control and texture .":
-
-```py
-
-                                  TOP                                 
-                                   |                                   
-                                   S                                  
-           ________________________|________________________________   
-          NP                              VP                        | 
-       ___|______________       __________|_______                  |  
-      NP        |        |     |                  NP                | 
-  ____|___      |        |     |    ______________|___________      |  
- _        _     _        _     _   _      _       _     _     _     _ 
- |        |     |        |     |   |      |       |     |     |     |  
-Oppo      's flagship machine has good quality control and texture  . 
-```
-
-the **semantic dependency graph** of "Oppo 's flagship machine has good quality control and texture .":
-
-```py
-
-1	Oppo	_	_	_	_	_	_	_	_
-2	's	_	_	_	_	_	_	_	_
-3	flagship	_	_	_	_	_	_	_	_
-4	machine	_	_	_	_	_	_	2:compound|3:compound|5:ARG1	_
-5	has	_	_	_	_	_	_	0:root	_
-6	good	_	_	_	_	_	_	_	_
-7	quality	_	_	_	_	_	_	_	_
-8	control	_	_	_	_	_	_	5:ARG2|6:ARG1|7:compound	_
-9	and	_	_	_	_	_	_	_	_
-10	texture	_	_	_	_	_	_	8:_and_c	_
-11	.	_	_	_	_	_	_	_	_
-```
-
-
-**Case 2**
-
-the **constituent tree** of the dialogue "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
+the **constituent tree** of "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
 
 ```py
                                                                    TOP                                                                                
@@ -57,7 +20,7 @@ the **constituent tree** of the dialogue "But it 's useless, software optimizati
 But  it  's useless, software     optimization sucks, Optimization  is Xiaomi      's weakness  [  allow sadness][allow sadness][allow     sadness  ] 
 
 ```
-the **semantic dependency graph** of "The workmanship and the screen are indeed good, but sometimes it will suddenly get stuck":
+the **semantic dependency graph** of "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]":
 
 ```py
 
@@ -83,7 +46,7 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
 
 **Case 2**
 
-the **constituent tree** of the dialogue "But it 's useless, software optimization sucks", "Optimization is Xiaomi 's weakness [ allow sadness][allow sadness][allow sadness ]"
+the **constituent tree** of the dialogue "Daily photography is still inferior to iPhone and Samsung"
 
 ```py
                                   TOP                              
