@@ -79,3 +79,28 @@ the **semantic dependency graph** of "The workmanship and the screen are indeed 
 17	sadness	_	_	_	_	_	_	_	_
 18	]	_	_	_	_	_	_	_	_
 ```
+
+               TOP                                                                                     
+                |                                                                                       
+                S                                                                                      
+       _________|_________________                                                                      
+      |                           VP                                                                   
+      |                 __________|________                                                             
+      |                |                   PP                                                          
+      |                |      _____________|____________________                                        
+      |                |     |                                  NP                                     
+      |                |     |     _____________________________|__________                             
+      |                |     |    |   |    |       |                      SBAR                         
+      |                |     |    |   |    |       |        _______________|______                      
+      |                |     |    |   |    |       |       |                      S                    
+      |                |     |    |   |    |       |       |                      |                     
+      |                |     |    |   |    |       |       |                      VP                   
+      |                |     |    |   |    |       |       |     _________________|_______              
+      |                |     |    |   |    |       |       |    |   |      |              PP           
+      |                |     |    |   |    |       |       |    |   |      |       _______|___          
+      NP               |     |    |   |    |       |      WHNP  |  ADVP   ADJP    |           NP       
+  ____|_________       |     |    |   |    |       |       |    |   |      |      |    _______|_____    
+ _    _    _    _      _     _    _   _    _       _       _    _   _      _      _   _       _     _  
+ |    |    |    |      |     |    |   |    |       |       |    |   |      |      |   |       |     |   
+The redmi k20 series starts with the  K  series borders, which are also narrower  at the     same price
+
