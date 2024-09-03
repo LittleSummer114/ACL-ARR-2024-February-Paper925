@@ -44,7 +44,7 @@ For the DiaASQ-EN dataset, you can set hyperparameters in `main_en_train.py` or 
   | DiaASQ-ZH | 1 | 32GB |
 
 
-## Checkpoints of models [Reproducibility Checklist 4 (e)&(k)]
+## Checkpoints of Models [Reproducibility Checklist 4 (e)&(k)]
 
 The DiaASQ-ZH checkpoint can be found at:
   ```bash
