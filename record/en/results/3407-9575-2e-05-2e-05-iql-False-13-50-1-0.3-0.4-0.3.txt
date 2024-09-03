@@ -1,0 +1,8 @@
+seed 3407 	 policy_seed 9575 
+bert_lr 2e-05 	 learning_rate_policy 2e-05 
+policy_type iql 	 use_softmax False 
+max_tgt_num_spans 13 	 epoch_size 50 
+reward_weights 1     
+p 	 r 	 F1 
+quad: 	 47.506561679790025% 	 33.211009174311926% 	 39.09287257019439% 
+Iden: 	 51.44356955380578% 	 35.96330275229358% 	 42.33261339092873% 

@@ -1,0 +1,4 @@
+bert_lr 2e-05    learning_rate_policy 2e-05 
+policy_type iql    use_softmax True 
+seed 3407    policy_seed 4 
+max_tgt_num_spans 13    epoch_size 50 
