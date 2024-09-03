@@ -40,8 +40,8 @@ For the DiaASQ-EN dataset, you can set hyperparameters in `main_en_train.py` or 
 
   | Dataset | Batch size | GPU Memory |
   | --- | --- | --- |
-  | DiaASQ-EN | 1 |  35GB. |
-  | DiaASQ-EN | 1 | 35GB. |
+  | DiaASQ-EN | 1 |  35GB |
+  | DiaASQ-ZH | 1 | 32GB |
 
 
 ## Checkpoints of models [Reproducibility Checklist 4 (e)&(k)]
