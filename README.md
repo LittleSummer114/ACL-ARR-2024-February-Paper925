@@ -113,7 +113,5 @@ The DiaASQ-ZH checkpoint can be found at:
   ```
 
 The DiaASQ-EN checkpoint can be found at:
-  ```bash
-  data/en
-    - en_47.pth.tar
-  ```
+
+    https://drive.google.com/file/d/1pxpb4-A5dHCGUgGfTMgB8bP4fCi2ztdV/view?usp=drive_link
